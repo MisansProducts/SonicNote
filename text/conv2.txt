@@ -1,0 +1,147 @@
+Speaker Diarization and Transcription Results
+==================================================
+
+Speaker SPEAKER_00 (0.5s - 26.5s):
+ Yes. Hello James. Um, yes, can I hear me? Yeah, I can hear you. You can hear me. Yes. Yes. Okay. Uh, I will be recording this conversation. Oh, okay. So, um, yeah, about the project. Uh, what do you think so far?
+
+Speaker SPEAKER_02 (30.3s - 56.4s):
+ I have to say, I need you to remind me our latest progress because what I know so far is we have a basic pipeline that cover the audio to the... We recognize the different ways of different people and then we convert them into...
+
+Speaker SPEAKER_00 (58.2s - 70.0s):
+ Yeah, we use P on piano notes to recognize voice of different people and then it splices it into different wave files with FM peg.
+
+Speaker SPEAKER_02 (71.6s - 78.8s):
+ Yeah, I remember that you want to improve the quality of cross-grouping, right?
+
+Speaker SPEAKER_00 (80.6s - 108.4s):
+ That's what I wanted, but I think that can hold off for now because there's plenty of ways to do that. What I'm thinking... Like hold off the improving certain aspects of it because right now what we have works. I think we should just try feeding it to an LLM and then outputting a summary.
+
+Speaker SPEAKER_02 (115.0s - 123.0s):
+ What do you want to feed to LLM? Well, the entire transcription...
+
+Speaker SPEAKER_00 (121.7s - 123.3s):
+ the entire transcription.
+
+Speaker SPEAKER_02 (124.2s - 128.1s):
+ the entire class after like After everything so far
+
+Speaker SPEAKER_00 (126.8s - 137.1s):
+ After everything so far, we get a file that tells us person one, person two talking. So that should be fed to an LLM.
+
+Speaker SPEAKER_02 (137.9s - 141.5s):
+ Alright, so what is the point of feeding it to LLM?
+
+Speaker SPEAKER_00 (142.4s - 154.7s):
+ Well, the purpose of the project is like the meeting notes app. Where like you're in a meeting and it transcribes and summarizes what happened.
+
+Speaker SPEAKER_02 (156.5s - 174.1s):
+ Oh, okay. So, okay. So, um, you want two parts, like, yeah, you want two parts. The first part is every, like, recording every exact word to tax, and another part is, uh, like, a high level summary, right?
+
+Speaker SPEAKER_00 (177.4s - 187.0s):
+ Are you on your computer right now? Yes, yes. You should open the project and just see how it is right now just to remind you.
+
+Speaker SPEAKER_02 (189.4s - 261.1s):
+ among the GitHub web page. So, but I think if the quality of the tax we provided is perfect, I mean, it's good enough, we all can easily do this, like the summarization without any doubt. Yep. Yeah, so what I'm thinking about is, is it like, is it possible to like, insert or plug in this little project to like, Google extension or it could be like, I'm not sure you know or not, like a mini program in WeChat or just an app model to try and I mean, publish on Google Play Console. Because I think we already had the whole pipeline and we could let a lot of users to try it.
+
+Speaker SPEAKER_00 (263.6s - 268.4s):
+ Yeah, we can deploy anywhere to be honest. Okay.
+
+Speaker SPEAKER_02 (270.4s - 285.4s):
+ So, but I mean, if you want to feed the tax-free alarm, we need the API, right? We don't need the API actually. Oh, you manually feed it to chat to VTI.
+
+Speaker SPEAKER_00 (285.3s - 310.0s):
+ No, no, no, no, no, no. So the same way where. Right now we're using. Like piano note, for example, and whisper. Those are all installed in the environment. So I'm thinking, what if we get an open source LLM like on hugging. Well. Or like llama llama is free.
+
+Speaker SPEAKER_02 (308.1s - 321.0s):
+ or like llama llamas free do you mean you want to like um we deploy a large language model locally and just feed it to the local
+
+Speaker SPEAKER_00 (322.9s - 336.1s):
+ Not through API because that costs a lot. You have a powerful GPU? You don't need a powerful. It's already it's pre-trained pre-trained LLM. We just need.
+
+Speaker SPEAKER_02 (344.5s - 349.2s):
+ Wait, so you want to feed it to local, locally deployed LLM, right?
+
+Speaker SPEAKER_00 (349.4s - 374.3s):
+ Yes, I want to extend the pipeline to take the final text file that it generates and feed it to an LLM. And then with that LLM, I'm thinking we give it a prompt, like given this transcription of a meeting, give key points and summarize who said what.
+
+Speaker SPEAKER_02 (381.4s - 420.5s):
+ You're recording this, like, this call for transcription? Yes, exactly. Okay, I have another idea. What if the quality of our sharing system? Yeah, I'm just screen sharing. What if the quality of what? I mean, what if the quality of the audio is not good enough? For example, if the audio is recorded in a very noisy environment. Is it necessary for us to add some...
+
+Speaker SPEAKER_00 (423.6s - 425.5s):
+ Yeah, that could also be a good idea.
+
+Speaker SPEAKER_02 (426.5s - 450.7s):
+ Yeah, because I'm not sure. I guess you can now recognize it because when you share something, you are like, I can see a lot of us. I mean, not a lot of us like noise, like white noise from your side. So I think that could be that could be a factor that decrease the quality of audio.
+
+Speaker SPEAKER_01 (454.2s - 457.2s):
+ Okay, what's this? You're not using llama? Okay.
+
+Speaker SPEAKER_00 (457.7s - 460.4s):
+ We could use deep-seq or Q1.
+
+Speaker SPEAKER_01 (457.8s - 459.5s):
+ We could use deep sleep.
+
+Speaker SPEAKER_02 (461.2s - 468.9s):
+ but anything really. But these things in QN, they are very much for large numbers. I mean, big GALAM.
+
+Speaker SPEAKER_00 (470.6s - 471.9s):
+ We want smaller, right?
+
+Speaker SPEAKER_02 (475.7s - 478.0s):
+ I think my micrometer cannot handle it.
+
+Speaker SPEAKER_00 (480.7s - 486.8s):
+ Okay, we need like one billion tokens then. A billion might be too much.
+
+Speaker SPEAKER_01 (490.0s - 493.6s):
+ 1B token dollar one? I think so.
+
+Speaker SPEAKER_00 (501.5s - 512.5s):
+ Yeah, we just got to look through Hugging Face here. Try to find like a good LLM. Don't push it to GitHub, by the way. Make sure you get ignore it.
+
+Speaker SPEAKER_01 (516.0s - 521.0s):
+ Geniv doesn't support upload of super long file.
+
+Speaker SPEAKER_00 (524.9s - 540.7s):
+ Well, ignore it anyway. And then we need token 1B. Here we go. Here, this is a really good one. What is the difference between instruct and the other one? I don't understand.
+
+Speaker SPEAKER_01 (541.3s - 547.3s):
+ Oh, is it? I remember instruct is with that instruction.
+
+Speaker SPEAKER_00 (549.5s - 585.8s):
+ an instruction tune generative. Okay. Yeah, we want, like these are about the same, the same description. Oh, yeah. 3.2 one beat instruct. Let me just search the instruct. Or actually I can deep seek it. Yeah. Difference.
+
+Speaker SPEAKER_02 (596.0s - 600.9s):
+ If we use the locally deployed alarm
+
+Speaker SPEAKER_01 (606.9s - 608.9s):
+ I'm gonna send it to like uh
+
+Speaker SPEAKER_02 (610.2s - 612.7s):
+ if we deploy that product or publish the product.
+
+Speaker SPEAKER_00 (612.7s - 651.1s):
+ If we publish the product, then we need an API, I'm pretty sure. But if it's small enough, then you can do it locally also. I'll ask that to deep seek. Is the instruction to invariant fine tune from the base model using supervised data sets and reinforcement? It is optimized to follow instructions and perform. OK, so we need instruct. Here you go. So yeah, we just need this.
+
+Speaker SPEAKER_02 (654.7s - 658.4s):
+ And then how do you know that? Do you know that?
+
+Speaker SPEAKER_01 (658.4s - 663.1s):
+ because we have a closed source model like Rama 4.
+
+Speaker SPEAKER_00 (665.3s - 715.9s):
+ Yeah, they usually do that to get money. How do we use it? Can we just download it? You see... I guess that's up to you to do. What do you mean? You know how you did the piano note? Yes. Yeah, try to use your stuff for this. Wait, what do you mean? Like the first name, last name, affiliation.
+
+Speaker SPEAKER_02 (721.7s - 773.0s):
+ You want me to define the model? Yeah Oh, John had 2.5. Pro is the top in the arena You Are using 1b yeah, okay, just
+
+Speaker SPEAKER_00 (780.1s - 792.4s):
+ I don't know what you mean by deploy, but like just download the model. OK, like you did with PN notes. Do you remember PN notes?
+
+Speaker SPEAKER_02 (817.6s - 822.1s):
+ When I click deploy, it shows and then I click inference.
+
+Speaker SPEAKER_00 (824.6s - 833.8s):
+ No, no, it's not deploy, it's use this model. And then transformer.
+
