@@ -5,3 +5,7 @@
 .idea
 
 .env
+
+transcription_results.txt
+
+summary_output.txt

@@ -1,9 +1,0 @@
-Speaker Diarization and Transcription Results
-==================================================
-
-Speaker SPEAKER_01 (0.0s - 16.8s):
- Hello, this is James and I'm 23 years old. And when I was a kid, I always thought I want to be a scientist in the future. And when I was around 12 or 13, I want to be a basketball player.
-
-Speaker SPEAKER_00 (17.5s - 28.7s):
- Oh, that's lovely to hear James. I'm glad to hear you're from Beijing. I hear their beef there is very tasty. I would like to try some one day. Thank you.
-

@@ -1,7 +1,8 @@
 faster-whisper
+ollama
 openai-whisper
-pydub
 pyannote.audio
+pydub
 python-dotenv
 speechrecognition
 torch

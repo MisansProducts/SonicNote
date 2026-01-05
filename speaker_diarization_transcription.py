@@ -6,6 +6,7 @@ from pyannote.audio import Pipeline
 import whisper
 from dotenv import load_dotenv
 import warnings
+import time
 
 warnings.filterwarnings("ignore", category=UserWarning)
 load_dotenv()
@@ -190,14 +191,16 @@ def format_transcript(results):
     return formatted
 
 if __name__ == "__main__":
-    audio_file = "recordings/conversation.wav"
+    audio_file = "recordings/1min.wav"
     output_file = "transcription_results.txt"
     
+    start = time.time()
     results = diarize_and_transcribe(audio_file, output_file)
+    end = time.time()
     
     if results:
         print("\n" + "=" * 50)
-        print("Transcription complete!")
+        print(f"Transcription complete ({end-start:.2f} seconds)")
         print(f"Total segments: {len(results)}")
         unique_speakers = len(set(r['speaker'] for r in results))
         print(f"Number of speakers: {unique_speakers}")
