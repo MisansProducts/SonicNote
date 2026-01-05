@@ -133,7 +133,7 @@ def summarize_file(file_path, model='qwen2.5'):
     )
 
     # Saves the output to summary_output.txt
-    output_filename = "summary_output.txt"
+    output_filename = os.path.join("text", "summary_output.txt")
     print(f"\n--- SUMMARY (Saving to {output_filename}) ---\n")
 
     with open(output_filename, 'w', encoding='utf-8') as f_out:
@@ -145,6 +145,6 @@ def summarize_file(file_path, model='qwen2.5'):
     print("\n\n--- END ---")
 
 if __name__ == "__main__":
-    input_file = "transcription_results.txt"
+    input_file = os.path.join("text", "transcription_output.txt")
     with OllamaServer():
         summarize_file(input_file, model="qwen2.5")

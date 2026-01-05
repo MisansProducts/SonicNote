@@ -1,13 +1,10 @@
-/.venv
+# Virtual env + env vars
+/.venv/
+/.env
 
-/recordings
+# Project input/output
+/recordings/
+/text/
 
-/text
-
-.idea
-
-.env
-
-transcription_results.txt
-
-summary_output.txt
+# IDE
+/.idea/

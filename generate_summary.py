@@ -1,7 +1,7 @@
 # Use a pipeline as a high-level helper
 from transformers import pipeline
 import torch
-
+import os
 
 user_input = ''
 with open('text/conv2.txt', 'r') as f:
@@ -20,5 +20,6 @@ result = pipe(messages, max_length=1500, min_length=10, do_sample=False)
 print(result)
 
 # Write result to file
-with open('summary', 'w') as f:
+output = os.path.join("text", "summary.txt")
+with open(output, 'w') as f:
     f.write(str(result))

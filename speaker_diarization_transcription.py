@@ -192,7 +192,7 @@ def format_transcript(results):
 
 if __name__ == "__main__":
     audio_file = "recordings/1min.wav"
-    output_file = "transcription_results.txt"
+    output_file = os.path.join("text", "transcription_output.txt")
     
     start = time.time()
     results = diarize_and_transcribe(audio_file, output_file)
