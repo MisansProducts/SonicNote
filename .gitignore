@@ -1,9 +1,10 @@
-/.venv
+# Virtual env + env vars
+/.venv/
+/.env
 
-/recordings
+# Project input/output
+/recordings/
+/text/
 
-/text
-
-.idea
-
-.env
+# IDE
+/.idea/
